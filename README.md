@@ -6,7 +6,7 @@ Repo for our group to collaborate on the data and visual analytics final project
 <br>
 <br>
 <br>
-## Project
+## Project Docs
 <a href="https://docs.google.com/document/d/1cjafBw1G33_HrOdqok-yhhjDRHoqFBKQ-x5F46Z5O3g/edit#">Weekly meeting notes</a>
 <br>
 <a href="google.com">Proposal</a>
