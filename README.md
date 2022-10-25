@@ -14,19 +14,18 @@ Repo for our group to collaborate on the data and visual analytics final project
 <a href="https://www.youtube.com/watch?v=Q5EUbc9XGeM">Proposal Video</a>
 <br>
 ## Data 
-Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> data on Windows using pSQL
-<br>
-<a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">download pSQL</a>
-<br>
-set working directory to bin folder <i>C:\Program Files\PostgreSQL\15\bin</i>
-<br>
-run: <i> psql --host aact-db.ctti-clinicaltrials.org --port=5432 --username='example' --dbname=aact </i>
-<br>
-<b><a href="https://aact.ctti-clinicaltrials.org/schema">Schema</a></b> 
-<br>
-sample query: <i>select count(*) from studies;</i>
-<br>
-### resolving errors
+### Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> data on Windows using pSQL
+<ul>
+<li><a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">download pSQL</a>
+<li>set working directory to bin folder <i>C:\Program Files\PostgreSQL\15\bin</i>
+<li>run: <i> psql --host aact-db.ctti-clinicaltrials.org --port=5432 --username='example' --dbname=aact </i>
+</ul>
+### References
+<ul>
+<li><b><a href="https://aact.ctti-clinicaltrials.org/schema">Schema</a></b> 
+<li>sample query: <i>select count(*) from studies;</i>
+</ul>
+### Resolving errors
 <ul>
 <li>if you're getting a UTF8 encoding error run the sql command <i>SET client_encoding TO 'UTF8';</i>
 <li>run \x to turn on expanded display to help with formatting
