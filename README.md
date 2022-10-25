@@ -16,12 +16,15 @@ Repo for our group to collaborate on the data and visual analytics final project
 ## Data 
 <br>
 ### Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> data on Windows using pSQL
+<br>
 <ul>
 <li><a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">download pSQL</a>
 <li>set working directory to bin folder <i>C:\Program Files\PostgreSQL\15\bin</i>
 <li>run: <i> psql --host aact-db.ctti-clinicaltrials.org --port=5432 --username='example' --dbname=aact </i>
 </ul>
+<br>
 ### References
+<br>
 <ul>
 <li><b><a href="https://aact.ctti-clinicaltrials.org/schema">Schema</a></b> 
 <li>sample query: <i>select count(*) from studies;</i>
