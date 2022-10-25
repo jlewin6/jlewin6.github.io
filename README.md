@@ -22,7 +22,8 @@ Repo for our group to collaborate on the data and visual analytics final project
 </ul>
 <b> References </b>
 <ul>
-<li><b><a href="https://aact.ctti-clinicaltrials.org/schema">Schema</a></b> 
+<li><a href="https://aact.ctti-clinicaltrials.org/schema">Schema</a>
+<li><a href="https://aact.ctti-clinicaltrials.org/data_dictionary">Data Dictionary</a>
 <li>sample query: <i>select count(*) from studies;</i>
 </ul>
 <b>Resolving errors</b>
