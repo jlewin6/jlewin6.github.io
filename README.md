@@ -21,3 +21,5 @@ Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTr
 set working directory to bin folder
 <br>
 run: <i> psql --host aact-db.ctti-clinicaltrials.org --port=5432 --username='example' --dbname=aact </i>
+<br>
+sample query: <i>select count(*) from studies;</i>
