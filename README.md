@@ -16,5 +16,7 @@ Repo for our group to collaborate on the data and visual analytics final project
 ## Data 
 Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> data
 download pSQL 
+<br>
 set working directory to bin folder
+<br>
 run: <i> psql --host aact-db.ctti-clinicaltrials.org --port=5432 --username='example' --dbname=aact </i>
