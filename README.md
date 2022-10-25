@@ -15,7 +15,8 @@ Repo for our group to collaborate on the data and visual analytics final project
 <br>
 ## Data 
 Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> data
-download pSQL 
+<br>
+<a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">download pSQL</a>
 <br>
 set working directory to bin folder
 <br>
