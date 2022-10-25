@@ -15,14 +15,12 @@ Repo for our group to collaborate on the data and visual analytics final project
 <br>
 ## Data 
 <br>
-### Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> data on Windows using pSQL
-<br>
+<br> Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> data on Windows using pSQL </b>
 <ul>
 <li><a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">download pSQL</a>
 <li>set working directory to bin folder <i>C:\Program Files\PostgreSQL\15\bin</i>
 <li>run: <i> psql --host aact-db.ctti-clinicaltrials.org --port=5432 --username='example' --dbname=aact </i>
 </ul>
-<br>
 <b> References </b>
 <ul>
 <li><b><a href="https://aact.ctti-clinicaltrials.org/schema">Schema</a></b> 
