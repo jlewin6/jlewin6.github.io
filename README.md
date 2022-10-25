@@ -14,6 +14,7 @@ Repo for our group to collaborate on the data and visual analytics final project
 <a href="https://www.youtube.com/watch?v=Q5EUbc9XGeM">Proposal Video</a>
 <br>
 ## Data 
+<br>
 ### Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> data on Windows using pSQL
 <ul>
 <li><a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">download pSQL</a>
