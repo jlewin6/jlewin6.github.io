@@ -16,19 +16,20 @@ Repo for our group to collaborate on the data and visual analytics final project
 ## Data 
 <br> Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> through <a href="https://aact.ctti-clinicaltrials.org/">Clinical Trials Transformation Initiative</a> using pSQL
 <ul>
-<li><a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">download pSQL</a>
-<li>set working directory to bin folder <i>C:\Program Files\PostgreSQL\15\bin</i>
-<li>run: <i> psql --host aact-db.ctti-clinicaltrials.org --port=5432 --username='example' --dbname=aact </i>
+  <li>create an account on the clinical trials initiative page
+  <li><a href="https://www.enterprisedb.com/downloads/postgres-postgresql-downloads">download pSQL</a>
+  <li>set working directory to bin folder <i>C:\Program Files\PostgreSQL\15\bin</i>
+  <li>run: <i> psql --host aact-db.ctti-clinicaltrials.org --port=5432 --username='example' --dbname=aact </i>
 </ul>
 <b> References </b>
 <ul>
-<li><a href="https://aact.ctti-clinicaltrials.org/schema">Schema</a>
-<li><a href="https://aact.ctti-clinicaltrials.org/data_dictionary">Data Dictionary</a>
-<li>sample query: <i>select count(*) from studies;</i>
+  <li><a href="https://aact.ctti-clinicaltrials.org/schema">Schema</a>
+  <li><a href="https://aact.ctti-clinicaltrials.org/data_dictionary">Data Dictionary</a>
+  <li>sample query: <i>select count(*) from studies;</i>
 </ul>
 <b>Resolving errors</b>
 <ul>
-<li>if you're getting a UTF8 encoding error run the sql command <i>SET client_encoding TO 'UTF8';</i>
-<li>run \x to turn expanded display on/off to help with formatting
-<li> run \? for a list of additional commands
+  <li>if you're getting a UTF8 encoding error run the sql command <i>SET client_encoding TO 'UTF8';</i>
+  <li>run \x to turn expanded display on/off to help with formatting
+  <li> run \? for a list of additional commands
 </ul>
