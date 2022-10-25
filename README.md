@@ -13,4 +13,5 @@ Repo for our group to collaborate on the data and visual analytics final project
 <br>
 <a href="https://www.youtube.com/watch?v=Q5EUbc9XGeM">Proposal Video</a>
 <br>
-## Accessing <a href="ClinicalTrials.gov">ClinicalTrials.gov</a> data
+## Data 
+Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> data
