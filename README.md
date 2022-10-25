@@ -29,5 +29,5 @@ Repo for our group to collaborate on the data and visual analytics final project
 <b>Resolving errors</b>
 <ul>
 <li>if you're getting a UTF8 encoding error run the sql command <i>SET client_encoding TO 'UTF8';</i>
-<li>run \x to turn on expanded display to help with formatting
+<li>run \x to turn expanded display on/off to help with formatting
 </ul>
