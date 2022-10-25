@@ -25,6 +25,9 @@ run: <i> psql --host aact-db.ctti-clinicaltrials.org --port=5432 --username='exa
 sample query: <i>select count(*) from studies;</i>
 <br>
 <b><a href="https://aact.ctti-clinicaltrials.org/schema">Schema</a></b> 
-resolving errors: if you're getting a UTF8 encoding error, run the sql command <i>SET client_encoding TO 'UTF8';</i>
 <br>
-run \x to turn on expanded display to help with formatting
+### resolving errors
+<ul>
+<li>if you're getting a UTF8 encoding error run the sql command <i>SET client_encoding TO 'UTF8';</i>
+<li>run \x to turn on expanded display to help with formatting
+</ul>
