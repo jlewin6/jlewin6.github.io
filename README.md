@@ -23,3 +23,4 @@ set working directory to bin folder
 run: <i> psql --host aact-db.ctti-clinicaltrials.org --port=5432 --username='example' --dbname=aact </i>
 <br>
 sample query: <i>select count(*) from studies;</i>
+<b><a href="https://aact.ctti-clinicaltrials.org/schema">Schema</a></b> 
