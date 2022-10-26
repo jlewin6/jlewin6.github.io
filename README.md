@@ -7,12 +7,15 @@ Repo for our group to collaborate on the data and visual analytics final project
 <br>
 <br>
 ## Project Docs
+<a href="https://docs.google.com/document/d/1erX4OpgU211HFjJRcjamxAZiNvzC9xwRh5eIaOwE8Oc/edit?usp=sharing">Progress Report</a>
+<br>
 <a href="https://docs.google.com/document/d/1cjafBw1G33_HrOdqok-yhhjDRHoqFBKQ-x5F46Z5O3g/edit#">Weekly meeting notes</a>
 <br>
 <a href="https://docs.google.com/document/d/1ylCzLcUSYozW6nE28hbM9lZRbheKAYOK9GdyJh8Iz5A/edit?usp=sharing">Proposal</a>
 <br>
 <a href="https://www.youtube.com/watch?v=Q5EUbc9XGeM">Proposal Video</a>
 <br>
+
 ## Data 
 <b>Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> through <a href="https://aact.ctti-clinicaltrials.org/">Clinical Trials Transformation Initiative</a> using pSQL</b>
 <ul>
