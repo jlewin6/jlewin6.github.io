@@ -36,3 +36,7 @@ Repo for our group to collaborate on the data and visual analytics final project
   <li>run \x to turn expanded display on/off to help with formatting
   <li> run \? for a list of additional commands
 </ul>
+<b>Connecting in Python</b>
+<ul>
+  <li>https://www.dataquest.io/blog/tutorial-connect-install-and-query-postgresql-in-python/
+ </ul>
