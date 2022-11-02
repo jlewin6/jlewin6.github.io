@@ -40,3 +40,7 @@ Repo for our group to collaborate on the data and visual analytics final project
 <ul>
   <li>https://www.dataquest.io/blog/tutorial-connect-install-and-query-postgresql-in-python/
  </ul>
+ <b>Connecting with PgAdmin</b>
+  <ul>
+  <li>https://aact.ctti-clinicaltrials.org/pgadmin
+  </ul>
