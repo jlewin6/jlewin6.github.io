@@ -1,6 +1,8 @@
 # CSE6242-Project
 Repo for our group to collaborate on the data and visual analytics final project
 
+CONCERN: THE ICD-10 CM list of conditions doesn't seem like it will be a good first level for our visual. (JM)
+
 ## Class Resources
 <a href="https://docs.google.com/document/d/e/2PACX-1vTL8p8euifAho6K6PSE_b63A1HTucl3GCyLJSvjGq7ySnncqTnFa8azPNoMpzG9Wx38p4jPzxaC3OZg/pub#h.z11rqsgxo2dh">Project Description</a> | <a href="https://poloclub.github.io/cse6242-2022fall-online/#schedule">Class Schedule</a>
 <br>
@@ -15,6 +17,10 @@ Repo for our group to collaborate on the data and visual analytics final project
 <br>
 <a href="https://www.youtube.com/watch?v=Q5EUbc9XGeM">Proposal Video</a>
 <br>
+
+## NLP Resources:
+<a href="https://medium.com/analytics-vidhya/best-nlp-algorithms-to-get-document-similarity-a5559244b23b">Algorithms<a/>
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">TF-IDF Vectorizer (SKLearn)<a/>
 
 ## Data 
 <b>Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> through <a href="https://aact.ctti-clinicaltrials.org/">Clinical Trials Transformation Initiative</a> using pSQL</b>
