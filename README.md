@@ -20,6 +20,7 @@ CONCERN: THE ICD-10 CM list of conditions doesn't seem like it will be a good fi
 
 ## NLP Resources:
 <a href="https://medium.com/analytics-vidhya/best-nlp-algorithms-to-get-document-similarity-a5559244b23b">Algorithms<a/>
+<br>
 <a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">TF-IDF Vectorizer (SKLearn)<a/>
 
 ## Data 
