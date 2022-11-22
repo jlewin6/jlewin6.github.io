@@ -9,6 +9,8 @@ CONCERN: THE ICD-10 CM list of conditions doesn't seem like it will be a good fi
 <br>
 <br>
 ## Project Docs
+<a href="https://docs.google.com/document/d/1lqe5PRWkOnda88ej3mmXMtmSsfHRwsUhf-WpxVkttHg/edit?usp=sharing">Final Paper </a>
+<br>
 <a href="https://docs.google.com/document/d/1erX4OpgU211HFjJRcjamxAZiNvzC9xwRh5eIaOwE8Oc/edit?usp=sharing">Progress Report</a>
 <br>
 <a href="https://docs.google.com/document/d/1cjafBw1G33_HrOdqok-yhhjDRHoqFBKQ-x5F46Z5O3g/edit#">Weekly meeting notes</a>
