@@ -1,0 +1,58 @@
+<h1>your connecting map</h1>
+
+<h2><b>Connecting map for: </b> {{ nct }}</h2>
+
+<table>
+    <thead>
+      <tr>
+        <th>Search History</th>
+        <th>Total Search attempt</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for key, value in nct_dict.items() %}
+     <tr>
+         <td> {{ key }} </td>
+         <td> {{ value }} </td>
+     </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+
+
+<body>
+
+	{% include 'navbar.html' %}
+	
+	<div class="container">
+		{% if "studies" in data %}
+			{%for key, value in data.items()%}
+				<table class="table">
+					<tr>
+						<th>Study ID</th>
+						<th>Name_Condition</th>
+						<th>Overall Status</th>
+                        <th>Name_Country</th>
+                        <th>Intervention_ID</th>
+                        <th>Name_Intervention</th>
+                        <th>Description</th>
+
+					</tr>
+					{%for id, study in value.items()%}
+						<tr>
+							<td>{{study['nct_id']}}</td>
+							<td>{{study['name_condition']}}</td>
+							<td>{{study['overall_status']}}</td>
+                            <td>{{study['name_country']}}</td>
+							<td>{{study['intervention_id']}}</td>
+							<td>{{study['name_intervention']}}</td>
+                            <td>{{study['description']}}</td>
+
+						</tr>
+					{%endfor%}
+				</table>
+			{%endfor%}
+		{% endif %}
+	</div>
+</body>

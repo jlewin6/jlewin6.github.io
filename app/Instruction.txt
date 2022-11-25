@@ -1,0 +1,28 @@
+Instruction:
+
+Install flask first
+Go to /app folder in terminal
+
+To simply run the app:
+$ export FLASK_APP=app
+$ flask run
+
+Visit http://127.0.0.1:5000 in chrome, the app is up and running
+control+c to stop the server
+
+
+To run the app in development environment (useful, no need to restart server to reflect the change without restarting the server)
+$ export FLASK_ENV=development
+$ flask run
+
+
+
+Main file
+app.py: master file that collects html
+"render_template" allows to imports html files from /templates folder. 
+
+
+Folders: File names should not be changed. Flask will look for these two folders
+/templates
+/static
+
