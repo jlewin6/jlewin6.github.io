@@ -1,3 +1,9 @@
+<h3> WIP Readme for final projectg
+
+
+
+
+<h3> #################################
 # CSE6242-Project
 Repo for our group to collaborate on the data and visual analytics final project
 
