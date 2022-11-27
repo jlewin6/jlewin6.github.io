@@ -1,6 +1,5 @@
 Readme final WIP
 <br>
-### Data
 <br>
 ## What data sources were used for this project?
 The source of the data is from<a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a>. This 
