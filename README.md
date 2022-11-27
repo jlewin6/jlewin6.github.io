@@ -1,6 +1,10 @@
 Readme final WIP
 <br>
-## Data 
+### Data
+<br>
+## What data sources were used for this project?
+The source of the data is from<a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a>. This 
+## Accessing the Data
 <b>Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> through <a href="https://aact.ctti-clinicaltrials.org/">Clinical Trials Transformation Initiative</a> using pSQL</b>
 <ul>
   <li>create an account on the clinical trials initiative page
