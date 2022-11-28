@@ -1,5 +1,5 @@
 ## What data sources were used for this project?
-The source of the data is from<a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a>. This 
+The source of the data is from<a href="https://clinicaltrials.gov/ct2/resources/download"> ClinicalTrials.gov</a>. The entire dataset consists of 434,335 research studies in all 50 states and in 221 countries.
 ## Accessing the Data
 <b>Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> through <a href="https://aact.ctti-clinicaltrials.org/">Clinical Trials Transformation Initiative</a> using pSQL</b>
 <ul>
