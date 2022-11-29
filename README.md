@@ -1,9 +1,6 @@
-Readme final WIP
-<br>
-<br>
 ## What data sources were used for this project?
-The source of the data is from<a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a>. This 
-## Accessing the Data
+The source of the data is from<a href="https://clinicaltrials.gov/ct2/resources/download"> ClinicalTrials.gov</a>. The entire dataset consists of 434,335 research studies in all 50 states and in 221 countries.
+## Accessing the Data on Your Own
 <b>Accessing <a href="https://clinicaltrials.gov/ct2/resources/download">ClinicalTrials.gov</a> through <a href="https://aact.ctti-clinicaltrials.org/">Clinical Trials Transformation Initiative</a> using pSQL</b>
 <ul>
   <li>create an account on the clinical trials initiative page
@@ -31,33 +28,3 @@ The source of the data is from<a href="https://clinicaltrials.gov/ct2/resources/
   <ul>
   <li>https://aact.ctti-clinicaltrials.org/pgadmin
   </ul>
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<b> ####### </b>
-<br>
-## Class Resources
-<a href="https://docs.google.com/document/d/e/2PACX-1vTL8p8euifAho6K6PSE_b63A1HTucl3GCyLJSvjGq7ySnncqTnFa8azPNoMpzG9Wx38p4jPzxaC3OZg/pub#h.z11rqsgxo2dh">Project Description</a> | <a href="https://poloclub.github.io/cse6242-2022fall-online/#schedule">Class Schedule</a>
-<br>
-<br>
-<br>
-## Project Docs
-<a href="https://docs.google.com/document/d/1lqe5PRWkOnda88ej3mmXMtmSsfHRwsUhf-WpxVkttHg/edit?usp=sharing">Final Paper </a>
-<br>
-<a href="https://docs.google.com/document/d/1erX4OpgU211HFjJRcjamxAZiNvzC9xwRh5eIaOwE8Oc/edit?usp=sharing">Progress Report</a>
-<br>
-<a href="https://docs.google.com/document/d/1cjafBw1G33_HrOdqok-yhhjDRHoqFBKQ-x5F46Z5O3g/edit#">Weekly meeting notes</a>
-<br>
-<a href="https://docs.google.com/document/d/1ylCzLcUSYozW6nE28hbM9lZRbheKAYOK9GdyJh8Iz5A/edit?usp=sharing">Proposal</a>
-<br>
-<a href="https://www.youtube.com/watch?v=Q5EUbc9XGeM">Proposal Video</a>
-<br>
-
-## NLP Resources:
-<a href="https://medium.com/analytics-vidhya/best-nlp-algorithms-to-get-document-similarity-a5559244b23b">Algorithms<a/>
-<br>
-<a href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">TF-IDF Vectorizer (SKLearn)<a/>
-

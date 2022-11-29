@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>CSE6242 Team 38 Final Project</title>
+</head>
+<body>
+    
+    <nav class="sidebar">
+        <div class="sidebar-inner">
+            <header class="sidebar-header">
+                <button type="button" class="sidebar-burger" onclick="toggleSidebar()">
+                    <i class='bx bx-menu'></i>
+                </button>
+                <img src="images/logo.png" alt="" class="sidebar-logo">
+            </header>
+
+            <nav class="sidebar-menu">
+                <button type="button" class="has-border">
+                    <i class='bx bx-home' ></i>
+                    <span>Home</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bx-shape-circle'></i>
+                    <span><a style="text-decoration:none;color:#fff" href="webpages\trail-nav.html" target="_blank">Directed Graph</a></span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bx-layer' ></i>
+                    <span>Trial Similarity</span>
+                </button>
+                <button type="button" class="has-border">
+                    <i class='bx bx-data' ></i>
+                    <span><a style="text-decoration:none;color:#fff" href="images\aact_schema.png" target="_blank">Schema</a></span>
+                </button>
+            </nav>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+
+    <div class="circle"></div>
+
+    <div class="card">
+        <div class="logo">
+            <i class='bx bx-test-tube' ></i>
+        </div>
+        <h2>Understanding the Relationships <br>Between Clinical Trials</h2>
+            <p>Welcome to team 38s interactive exploration tool of the <a href="https://clinicaltrials.gov/ct2/home">clinical trial data</a>. Hundreds of thousands of clinical trials are registered on ClinicalTrials.gov, which provides a static representation of trial data and does not show relationships between them. 
+            <br><br>
+            We propose to develop an innovative and user-friendly visualization tool to help users navigate the trials in a visual format. We hope to help excelerate the speed at which doctors, patients, and others can find relavant clinical trial data for their research purposes. 
+            <h4>Force Directed Graph</h4> The relationships of clinical trials is visualized using a force directed graph, where the trials are connected via FILL IN TEXT HERE
+            </p>
+        <!-- <footer>
+            ex...
+        </footer> -->
+    </div>
+</body>
+</html>
