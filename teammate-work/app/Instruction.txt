@@ -26,3 +26,14 @@ Folders: File names should not be changed. Flask will look for these two folders
 /templates
 /static
 
+
+Example trials
+NCT00003950
+NCT00003953
+NCT00001082
+NCT00003005
+NCT00003018
+NCT00003040
+NCT00003045
+NCT00003389
+NCT00003516

@@ -25,33 +25,35 @@ def map():
         if os.path.exists('nct_inputs.json'):
             with open('nct_inputs.json') as nct_file:
                 nct_dict = json.load(nct_file) #load Json first if exists
-                
-        if request.form['nct'] in nct_dict.keys():
+        
+        user_input = request.form['nct'] 
+        
+        if user_input in nct_dict.keys():
             flash('NCT ID has recently been used.')
             return redirect(url_for('home')) # When inputs are duplicated, return to home
         
         if len(nct_dict) < 5: #Keep the search history up to 5 in nct_input.json
-            nct_dict[request.form['nct']] = len(nct_dict)+1 
+            nct_dict[user_input] = len(nct_dict)+1 
         else: 
             nct_dict.pop(next(iter(nct_dict)))
-            nct_dict[request.form['nct']] = list(nct_dict.values())[3]+1 
+            nct_dict[user_input] = list(nct_dict.values())[3]+1 
         
         with open('nct_inputs.json', 'w') as nct_file:
             json.dump(nct_dict, nct_file) #Store user input as JSON
         
         # Step 2: Create small database based on user inqeiry.
-        studies_data = get_initial_studydata()
+        studies_data = get_initial_studydata(user_input)
         # Create sub-table based on study correspond to valid studyIDs
         
         return render_template('map.html', 
-                               nct=request.form['nct'],
+                               nct=user_input,
                                nct_dict=nct_dict, #route the user input (NCT#) to map.html via jinja
                                data={'studies' : studies_data}) 
     else: 
         return redirect(url_for('home')) #When approched via GET i.e. http://127.0.0.1:5000/map, return to home
 
 #Helper 1: extract table
-def get_initial_studydata():
+def get_initial_studydata(user_input):
     conn = get_connection_object()
     cur = conn.cursor()
 
@@ -72,9 +74,12 @@ def get_initial_studydata():
                 ON c.nct_id = i.nct_id
                 LEFT JOIN brief_summaries b
                 ON c.nct_id = b.nct_id
-                ORDER BY nct_id desc
-                LIMIT 1000
+                WHERE c.nct_id is not null AND i.intervention_id is not null    
+                
+                LIMIT 50000
                 ''')
+#               ORDER BY nct_id desc #This will slow down the process significanty and seems not stable. 
+
     
     studies_list = cur.fetchall()
     
@@ -86,11 +91,26 @@ def get_initial_studydata():
         mydict[row[0]] = {"nct_id":row[0],"name_condition":row[1],"overall_status":row[2], 
                           "name_country":row[3],"intervention_id":row[4], 
                           "name_intervention":row[5],"description":row[6]}
-        
-    #(Optional) Filter the dictionary based on input
-        
+
+    #(Optional) Filter the dictionary based on input: return the list of NCT with the same disease  
+    def get_key_from_value(d, val):
+        keys = [k for k, v in d.items() if v == val]
+        if keys:
+            return keys[0]
+        return None
     
-    return json.loads(json.dumps(mydict))
+    subset_dict = dict()
+    if user_input in mydict:
+        disease = mydict[user_input]['name_condition']
+        for v in mydict.values():
+            if v['name_condition'] == disease:
+                subset_dict[get_key_from_value(mydict, v)] = v                
+    else: 
+        print("not matched") #TODO: need to implement function to return "no matched NCT IDs"
+       
+    return json.loads(json.dumps(subset_dict))
+    #return json.loads(json.dumps(mydict))
+
 
 #Helper : connection        
 def get_connection_object():
