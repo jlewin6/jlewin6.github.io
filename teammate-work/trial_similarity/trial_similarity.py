@@ -21,7 +21,7 @@ vectorizer = TfidfVectorizer(stop_words = text.ENGLISH_STOP_WORDS, use_idf=True)
 X = vectorizer.fit_transform(desc_collection)
 
 # Finds the cosine similarity between the
-A = cosine_similarity(X[selected_index], X)
+A = np.round_(cosine_similarity(X[selected_index], X), 4)
 
 # Creates a df of the top n similarity scores
 # Since A is a nested array, we need to use the A[0] to get within it.
