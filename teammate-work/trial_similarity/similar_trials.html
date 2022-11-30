@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script type="text/javascript" src="../lib/d3.v5.min.js"></script>
-</head>
+    <script src="../../lib/d3.v5.min.js"></script>
+    <script src="../../lib/d3-dsv.min.js"></script>
+  </head>
 <body>
   <script>
 
@@ -25,7 +24,7 @@
 	        .enter()
 	        .append('tr')
 
-	    var cells = rows.selectAll('td')
+	    rows.selectAll('td')
 	        .data(function(row) {
 	    	    return columns.map(function (column) {
 	    		    return { column: column, value: row[column] }
@@ -38,10 +37,12 @@
         return table;
   }
 
-  d3.csv('top_similar.csv',function (data) {
-	    var columns = ['nct_id', 'description', 'similarity_score']
-        tabulate(data,columns)
-  })
+  d3.dsv(",", 'top_similar.csv',function (data) {
+      return data
+  }).then(function(data){
+      var columns = ['nct_id', 'description', 'similarity_score']
+      tabulate(data,columns)
+  });
 
   </script>
 
