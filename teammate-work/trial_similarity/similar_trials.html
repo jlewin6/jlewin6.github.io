@@ -18,7 +18,6 @@
 	        .enter()
 	        .append('th')
 	        .text(function (d) { return d })
-	        .attr("font-family", "sans-serif")
             .style('border', '1px solid black')
 
 	    var rows = tbody.selectAll('tr')
@@ -36,7 +35,6 @@
             .enter()
             .append('td')
             .text(function (d) { return d.value })
-            .attr("font-family", "sans-serif")
       .style('border', '1px solid black')
 
         return table;
