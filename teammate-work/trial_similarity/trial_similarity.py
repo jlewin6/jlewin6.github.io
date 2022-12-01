@@ -33,7 +33,7 @@ df_sim_score = pd.DataFrame({'similarity_score': np.sort(A[0])[-(top_n+1):-1]})
 df_top_trials = df.iloc[(np.argsort(A[0]))[-(top_n+1):-1], :].reset_index(drop=True)
 
 # Concatenates the list of trials with the corresponding similiarity scores.
-df_top_w_scores = pd.concat([df_top_trials, df_sim_score], axis=1)
+df_top_w_scores = pd.concat([df_top_trials, df_sim_score], axis=1).sort_values(by=['similarity_score'], ascending=False)
 
 # Creates a csv file of the top similar results.
 df_top_w_scores.to_csv("top_similar.csv", index=False)
