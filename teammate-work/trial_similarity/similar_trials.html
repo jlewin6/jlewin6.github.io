@@ -3,51 +3,48 @@
 <head>
     <script src="../../lib/d3.v5.min.js"></script>
     <script src="../../lib/d3-dsv.min.js"></script>
-  </head>
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <py-env>
+      - paths:
+        - /teammate-work/trial_similarity/trial_similarity.py
+        - ./data_AACT_united_states_cancer_2000.csv
+        - ./top_similar.csv
+      - pandas
+      - numpy
+      - scikit-learn
+      - matplotlib
+    </py-env>
+</head>
+
 <body>
-  <script>
 
-  var tabulate = function (data,columns) {
-        var table = d3.select('body').append('table').style('border', '1px solid black')
-	    var thead = table.append('thead')
-	    var tbody = table.append('tbody')
+  <div>Find similar clinical trials. Enter a unique NCT number:</div>
+  <input type="text" id="nct_id">
+  <button type="submit" id="submit-button" pys-onClick="display">Submit</button>
+  <div id="fig-output"></div>
+  <div id="table-output"></div>
 
-	    thead.append('tr')
-	        .selectAll('th')
-	        .data(columns)
-	        .enter()
-	        .append('th')
-	        .text(function (d) { return d })
-            .style('border', '1px solid black')
-
-	    var rows = tbody.selectAll('tr')
-	        .data(data)
-	        .enter()
-	        .append('tr')
-      .style('border', '1px solid black')
-
-	    rows.selectAll('td')
-	        .data(function(row) {
-	    	    return columns.map(function (column) {
-	    		    return { column: column, value: row[column] }
-	            })
-            })
-            .enter()
-            .append('td')
-            .text(function (d) { return d.value })
-      .style('border', '1px solid black')
-
-        return table;
-  }
-
-  d3.dsv(",", 'top_similar.csv',function (data) {
-      return data
-  }).then(function(data){
-      var columns = ['nct_id', 'description', 'similarity_score']
-      tabulate(data,columns)
-  });
-
-  </script>
+  <br>
 
 </body>
+
+
+<body>
+  <py-script>   
+
+    
+    from trial_similarity import similarity_table, similarity_plot, print_test
+
+    def display(*args, **kwargs):
+      val = Element('nct_id').element.value
+
+      pyscript.write("fig-output",  similarity_plot(val))
+
+      Element('table-output').element.innerHTML = similarity_table(val)
+
+
+  </py-script>
+
+</body>
+
 </html>
