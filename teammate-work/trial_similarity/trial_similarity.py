@@ -61,7 +61,7 @@ def similarity_plot(input):
     df= similarity_score(input)
     fig, ax = plt.subplots()
     ax.scatter(df.similarity_score_title, df.similarity_score_description, s=300)
-    ax.set_title("Similarity Score Sistribution of Top 10 Similar Studies")
+    ax.set_title("Similarity Score Distribution of Top 10 Similar Studies")
     ax.set(xlabel="Cosine Similarity Score based on Title", ylabel="Simillarity Score based on Study Description")
         
     return (fig)
