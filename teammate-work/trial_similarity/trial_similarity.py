@@ -38,13 +38,13 @@ def similarity_score(input):
 
     # Creates a df of the clinical trial records with  the top n similarity scores to
     # the 'selected' trial. The last record is the selected record and isn't included
-    df_top_trials = df.iloc[(np.argsort(A[0]))[-(top_n+1):-1], :].reset_index(drop=True)
+    df_top_trials = df.iloc[(np.argsort(A[0]))[-(top_n+1):], :].reset_index(drop=True)
     
     # Select columns to display
-    df_top_trials = df_top_trials[['nct_id', 'name_condition', 'brief_title', 'study_description']
-                                  ]
+    df_top_trials = df_top_trials[['nct_id', 'name_condition', 'brief_title', 'study_description']]
+    
     # Concatenates the list of trials with the corresponding similiarity scores.
-    df_top_w_scores = pd.concat([df_top_trials, df_sim_score, df_sim_score_2], axis=1)
+    df_top_w_scores = pd.concat([df_top_trials, df_sim_score, df_sim_score_2], axis=1).sort_values(by=["similarity_score_description"], ascending=False)
     return df_top_w_scores
 
 
