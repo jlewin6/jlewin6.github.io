@@ -5,6 +5,9 @@ To provide a web-based application that allows researches to explore how clinica
 <a href="https://docs.google.com/document/d/1TU98gLuFX_0b1eKjLDSA7vy_Pt-TfzQrGJmKowTYLg0/edit?usp=sharing">Final Report</a>
 <br>
 <a href="https://www.figma.com/file/U3mjLXNcLmYceVImTadwXB/038Poster?node-id=0%3A1"> Poster </a>
+<br>
+<a href="https://www.surveymonkey.com/r/3G63BKF"> Survey </a>
+<br>
 ## What data sources were used for this project?
 The source of the data is from<a href="https://clinicaltrials.gov/ct2/resources/download"> ClinicalTrials.gov</a>. The entire dataset consists of 434,335 research studies in all 50 states and in 221 countries.
 ## Accessing the Data on Your Own
