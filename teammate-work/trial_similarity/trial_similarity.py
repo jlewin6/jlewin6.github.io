@@ -42,8 +42,9 @@ def similarity_score(input):
     
     # Select columns to display
     df_top_trials = df_top_trials[['nct_id', 'name_condition', 'brief_title', 'study_description']]
+    
     # Concatenates the list of trials with the corresponding similiarity scores.
-    df_top_w_scores = pd.concat([df_top_trials, df_sim_score, df_sim_score_2], axis=1).sort_values(by=["similarity_score_description"], ascending=false)
+    df_top_w_scores = pd.concat([df_top_trials, df_sim_score, df_sim_score_2], axis=1).sort_values(by=["similarity_score_description"], ascending=False)
     return df_top_w_scores
 
 
