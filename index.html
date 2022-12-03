@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>CSE6242 Team 38 Final Project</title>
 </head>
-<body>
+<body class="open">
     
     <nav class="sidebar">
         <div class="sidebar-inner">
@@ -51,11 +51,20 @@
             <i class='bx bx-test-tube' ></i>
         </div>
         <h2>Understanding the Relationships <br>Between Clinical Trials</h2>
-            <p>Welcome to team 38s interactive exploration tool of the <a href="https://clinicaltrials.gov/ct2/home">clinical trial data</a>. Hundreds of thousands of clinical trials are registered on ClinicalTrials.gov, which provides a static representation of trial data and does not show relationships between them. 
+            <p>Welcome to team 38s interactive exploration tool of the <a href="https://clinicaltrials.gov/ct2/home">clinical trial data</a>.<br> 
+            <br>Hundreds of thousands of clinical trials are registered on ClinicalTrials.gov, which has been collected and organized into a relational database thanks to the efforts from the <a href="https://aact.ctti-clinicaltrials.org/">Clinical Trials Transformation Initiatve</a>.<i><br> See the schema tab on the left to learn how the data is organized.</i>
             <br><br>
-            We propose to develop an innovative and user-friendly visualization tool to help users navigate the trials in a visual format. We hope to help excelerate the speed at which doctors, patients, and others can find relavant clinical trial data for their research purposes. 
-            <h4>Force Directed Graph</h4> The relationships of clinical trials is visualized using a force directed graph, where the trials are connected via FILL IN TEXT HERE
-            </p>
+            We have attempted to develop an innovative and user-friendly visualization tool to help users navigate the trials and find related studies. We hope to help excelerate the speed at which doctors, patients, and others can find relavant clinical trial data for their research purposes. 
+        <h4>Network Graph</h4> The relationships of clinical trials is visualized using a force directed graph. We used D3 to create a network for navigating the clinical trials based on 6 hierarchical levels. Each level defines an attribute for dividing clinical trials into subgroups.<br>
+            <br><b>Level 1:</b> Condition Type - based on the International Classification of Diseases
+            <br><b>Level 2:</b> Condition - based on ‘Condition’ Table- the name of the disease or condition studied in the clinical trial
+            <br><b>Level 3:</b>s Intervention Type - based on ‘Intervention’ Table - includes drugs, medical devices, procedures, vaccines, and other products
+            <br><b>Level 4:</b> Intervention - based on ‘Intervention’ Table - the specific intervention or exposure of interest to the study
+            <br><b>Level 5:</b> Clinical Trial Phase - based on ‘Studies’ Table - Phase I/II/III/IV
+            <br><b>Level 6:</b> Clinical Trial Studies - based on ‘Studies’ Table
+        <h4>Trial Similarity</h4>
+        Finds the most closely related trials to the searched trials ID based on natural language processing of the description & title. The app will display the top five most similar papers and will show a visual of how these papers compare to one another.
+        </p>
         <!-- <footer>
             ex...
         </footer> -->
