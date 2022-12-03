@@ -1,3 +1,6 @@
+## Project Purpose
+To provide a web-based application that allows researches to explore how clinical trials are connected. 
+<br>
 ## Our Report
 <a href="https://docs.google.com/document/d/1TU98gLuFX_0b1eKjLDSA7vy_Pt-TfzQrGJmKowTYLg0/edit?usp=sharing">Final Report</a>
 <br>
